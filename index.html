@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- this sets the search icon -->
+  <link rel="icon" href="celtic favicon.png" type="image/x-icon">
+  <title>this is my Module 4 HTML concepts forms Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--this is were i styled everything to make life easier-->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 20px;
+      margin: 10px;
+    }
+
+    footer {
+      background-color: white;
+      color: black;
+      text-align: center;
+      padding: 10px 0;
+      position: left;
+      width: 75%;
+      bottom: 0;
+    }
+
+    img.rounded {
+      border-radius: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>how am i doing this is html concepts</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home">
+    <h2>Home</h2>
+    <!--this is were i called and created the rounded corner image-->
+    <img src="images/celtic_image.png" width="200" alt="https://placehold.co/300x200">
+    <img src="images/Norse pagan blacksmith and bowyer brand logo with initials BHIII.png" width="200"
+      alt="Rounded Image" class="rounded">
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>im really enjoying frontend .</p>
+  </section>
+  <section id="contact">
+    <h2>Contact me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <br><input type="text" id="name" name="name"><br>
+      <br><label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <br> <label for="message">Message:</label>
+      <br> <textarea id="message" name="message"></textarea><br>
+      <br>
+      <fieldset>
+        <legend>How did you find us?</legend>
+        <input type="radio" id="google" name="source" value="Google">
+        <label for="google">Google</label><br>
+        <input type="radio" id="social-media" name="source" value="Social Media">
+        <label for="social-media">Social Media</label>
+        <br>
+        <input type="radio" id="friend" name="source" value="Friend">
+        <label for="friend">Friend</label>
+      </fieldset><br> <input type="submit" value="Submit">
+    </form>
+  </section>
+   <section> <!-- my table  -->
+    <h2>Product List</h2>
+    <table border="2">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>sunglasses</td>
+          <td>$10</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>ear rings</td>
+          <td>$20</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>watches</td>
+          <td>$15</td>
+          <td>40</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+   <footer>
+     <!-- cool stuff -->
+    <p>&copy; 2025 basic html. writen billy hutchcraft</p>
+  </footer>
+</body>
+
+</html>
